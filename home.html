@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="homeresponsive.css">
+  <title>BudgetSaku</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-icon">
+      <svg class="hotspot" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path d="M6.46777 16.8623H7.10938C7.03906 16.3086 6.99512 15.7109 7.08301 15.1924H6.57324C4.48145 15.1924 2.99609 13.7246 2.99609 11.6152C2.99609 9.52344 4.48145 8.03809 6.57324 8.03809H14.334C16.4258 8.03809 17.9111 9.52344 17.9111 11.6152C17.9111 13.7246 16.4258 15.1924 14.334 15.1924H11.6445C11.2227 15.4736 11.2578 16.5283 11.8027 16.8623H14.4395C17.4893 16.8623 19.6689 14.709 19.6689 11.6152C19.6689 8.53027 17.4893 6.37695 14.4395 6.37695H6.46777C3.41797 6.37695 1.23828 8.53027 1.23828 11.6152C1.23828 14.709 3.41797 16.8623 6.46777 16.8623ZM13.5518 21.0195H21.5146C24.5732 21.0195 26.7529 18.8662 26.7529 15.7812C26.7529 12.6875 24.5732 10.5342 21.5146 10.5342H20.8818C20.9521 11.0879 20.9961 11.6855 20.9082 12.2041H21.418C23.5098 12.2041 24.9951 13.6719 24.9951 15.7812C24.9951 17.873 23.5098 19.3584 21.418 19.3584H13.6572C11.5654 19.3584 10.0801 17.873 10.0801 15.7812C10.0801 13.6719 11.5654 12.2041 13.6572 12.2041H16.3467C16.7686 11.9229 16.7334 10.8682 16.1885 10.5342H13.5518C10.4932 10.5342 8.32227 12.6875 8.32227 15.7812C8.32227 18.8662 10.4932 21.0195 13.5518 21.0195Z" fill="white"/>
+        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+        <path
+          d="M26.8276 14.6296C26.8182 13.5184 25.3021 12.6426 23.4469 12.6426H19.5766C19.0493 12.6426 18.8515 12.5485 18.5313 12.2001L12.1467 5.2975C11.9395 5.0715 11.6947 4.9585 11.4216 4.9585H10.2068C9.96201 4.9585 9.82076 5.1845 9.93376 5.43876L13.2391 12.6332L8.40823 13.17L6.68495 10.1001C6.55311 9.86468 6.35536 9.76109 6.0446 9.76109H5.62084C5.36659 9.76109 5.19708 9.93059 5.19708 10.1848V19.0744C5.19708 19.3286 5.36659 19.4981 5.62084 19.4981H6.0446C6.35536 19.4981 6.55311 19.3945 6.68495 19.1591L8.40823 16.0798L13.2391 16.626L9.93376 23.8205C9.82076 24.0747 9.96201 24.3007 10.2068 24.3007H11.4216C11.6947 24.3007 11.9395 24.1783 12.1467 23.9617L18.5313 17.0592C18.8515 16.7107 19.0493 16.6166 19.5766 16.6166H23.4469C25.3021 16.6166 26.8182 15.7314 26.8276 14.6296Z"
+          fill="white" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <path
+          d="M5.1055 12.5557C5.29007 12.7578 5.58011 12.749 5.77347 12.5381C7.94437 10.2441 10.8008 9.03125 13.9912 9.03125C17.208 9.03125 20.0733 10.2441 22.2354 12.5557C22.42 12.7402 22.7012 12.7314 22.8858 12.5381L24.1162 11.2988C24.292 11.123 24.292 10.8945 24.1514 10.7275C22.0332 8.11719 18.0869 6.24512 13.9912 6.24512C9.90433 6.24512 5.94925 8.1084 3.83987 10.7275C3.69925 10.8945 3.69925 11.123 3.86624 11.2988L5.1055 12.5557ZM8.77933 16.2119C8.99026 16.4141 9.27151 16.3965 9.47366 16.1768C10.5459 15.0078 12.2598 14.1816 14 14.1904C15.7491 14.1816 17.4629 15.0254 18.5616 16.2031C18.7461 16.4141 19.0098 16.4053 19.2119 16.2031L20.5918 14.8496C20.7588 14.6914 20.7764 14.4717 20.627 14.2959C19.2559 12.6348 16.751 11.4395 14 11.4395C11.2403 11.4395 8.73538 12.6348 7.36429 14.2959C7.21487 14.4717 7.23245 14.6826 7.39944 14.8496L8.77933 16.2119ZM14 21.0811C14.211 21.0811 14.3955 20.9844 14.7559 20.6416L16.9092 18.5674C17.0674 18.418 17.1026 18.1719 16.9619 17.9961C16.3467 17.2139 15.2305 16.5811 14 16.5811C12.7344 16.5811 11.6006 17.2402 10.9942 18.0664C10.8887 18.2246 10.9414 18.418 11.0908 18.5674L13.2442 20.6416C13.5957 20.9756 13.7891 21.0811 14 21.0811Z"
+          fill="white" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+        <path
+          d="M6.01635 21.2214H20.782C22.4958 21.2214 23.8424 21.0331 24.8124 20.0631C25.7729 19.0932 25.9518 17.7654 25.9518 16.0516V13.2171C25.9518 11.4938 25.7729 10.166 24.8124 9.20551C23.833 8.23558 22.4958 8.04724 20.782 8.04724H5.9881C4.30248 8.04724 2.95587 8.23558 1.99535 9.20551C1.02542 10.1754 0.846497 11.5032 0.846497 13.1888V16.0516C0.846497 17.7654 1.02542 19.1026 1.98594 20.0631C2.96529 21.0331 4.30248 21.2214 6.01635 21.2214ZM5.75268 19.3757C4.78274 19.3757 3.86931 19.2345 3.34196 18.7165C2.81462 18.1892 2.6922 17.2946 2.6922 16.3152V12.9723C2.6922 11.9835 2.81462 11.0795 3.33255 10.5521C3.85989 10.0248 4.78274 9.89294 5.77151 9.89294H21.0456C22.025 9.89294 22.9384 10.0248 23.4564 10.5521C23.9837 11.0795 24.1061 11.9741 24.1061 12.9534V16.3152C24.1061 17.2946 23.9837 18.1892 23.4564 18.7165C22.9384 19.2439 22.025 19.3757 21.0456 19.3757H5.75268ZM5.38542 18.1892H16.6574C17.2412 18.1892 17.5897 18.1044 17.8345 17.8596C18.0699 17.6148 18.1641 17.2663 18.1641 16.6919V12.5767C18.1641 11.9929 18.0699 11.6445 17.8345 11.4091C17.5897 11.1642 17.2412 11.0795 16.6574 11.0795H5.40425C4.80157 11.0795 4.45315 11.1642 4.20831 11.3996C3.97289 11.6445 3.87872 12.0023 3.87872 12.5956V16.6919C3.87872 17.2758 3.97289 17.6148 4.20831 17.8596C4.45315 18.1044 4.80157 18.1892 5.38542 18.1892ZM27.3267 17.1816C28.1083 17.1345 29.1536 16.1363 29.1536 14.6296C29.1536 13.1323 28.1083 12.1247 27.3267 12.0777V17.1816Z"
+          fill="#FFFDFD" />
+      </svg>
+    </div>
+    <div class="header-name">
+      <div class="header-main">
+        <img class="logo" src="images/logo.png"/>
+        <h1>BudgetSaku</h1>
+        <img class="bell" src="images/bell.png"/>
+      </div>
+      <h3>Hai, Annisa!</h3>
+    </div>
+  </header>
+  <main>
+
+    <div class="bill-wrapper">
+      <div class="bill">
+        <div class="today-bill">
+          <h3>Today's Bill</h3>
+          <div class="money-bill">
+            <p>Rp</p>
+            <h1>34.000</h1>
+          </div>
+          <div class="m-banking">
+            <h4>m-banking</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="37" viewBox="0 0 180 37" fill="none">
+              <g filter="url(#filter0_i_23_9)">
+                <line x1="17.5" y1="17.5" x2="162.5" y2="17.5" stroke="#AEA3A3" stroke-width="35"
+                  stroke-linecap="round" />
+              </g>
+              <g filter="url(#filter1_d_23_9)">
+                <line x1="16.5" y1="17.5" x2="133.5" y2="17.5" stroke="#C8C8C8" stroke-width="23"
+                  stroke-linecap="round" />
+              </g>
+              <defs>
+                <filter id="filter0_i_23_9" x="0" y="0" width="180" height="39" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_23_9" />
+                </filter>
+                <filter id="filter1_d_23_9" x="1" y="6" width="148" height="31" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_23_9" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_23_9" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+          <div class="cash">
+            <h4>cash</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="37" viewBox="0 0 180 37" fill="none">
+              <g filter="url(#filter0_i_23_13)">
+                <line x1="17.5" y1="17.5" x2="162.5" y2="17.5" stroke="#AEA3A3" stroke-width="35" stroke-linecap="round"/>
+              </g>
+              <g filter="url(#filter1_d_23_13)">
+                <line x1="16.5" y1="17.5" x2="83.5" y2="17.5" stroke="#C8C8C8" stroke-width="23" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <filter id="filter0_i_23_13" x="0" y="0" width="180" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_23_13"/>
+                </filter>
+                <filter id="filter1_d_23_13" x="1" y="6" width="98" height="31" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_23_13"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_23_13" result="shape"/>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="save">
+        <div class="presentase">
+          <h3>save:</h3>
+          <div class="money-pre">
+            <h1>20</h1>
+            <h3>%</h3>
+          </div>
+        </div>
+        <div class="mutation">
+          <h4>mutation</h4>
+        </div>
+      </div>
+    </div>
+    <div class="shortcut-wrapper">
+      <h2>Shortcut</h2>
+      <div class="shortcut-con">
+        <div class="shortcut">
+          <img src="images/usd.png" class="usd-png">
+          <h4>Main Saving</h4>
+          <p>Rp5.000.000.000</p>
+        </div>
+        <div class="shortcut">
+          <img src="images/coin.png" class="coin-png">
+          <h4>Today's Money</h4>
+          <p>Rp120.000</p>
+        </div>
+        <div class="shortcut">
+          <img src="images/chart.png" class="chart-png">
+          <h4>Total Expenses</h4>
+          <p>Rp6.000.000</p>
+        </div>
+        <div class="shortcut-addshortcut">
+          <img src="images/add.png" class="add-png">
+          <h4>Add Shortcut</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <!-- <span class="fa fa-bars menu-icon"></span> -->
+      <div class="con-bottom">
+        <svg href="home.html" class="home" xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+          <path
+            d="M10.8495 27.5652H7.89967C4.64137 27.5652 2 24.9222 2 21.6619V12.3755C2 10.3112 3.07759 8.3969 4.84185 7.32699L12.2164 2.85481C14.0959 1.71506 16.4526 1.71506 18.332 2.85481L25.7066 7.32699C27.4709 8.3969 28.5485 10.3112 28.5485 12.3755V21.6619C28.5485 24.9222 25.9071 27.5652 22.6488 27.5652H19.699M10.8495 27.5652V21.6619C10.8495 19.2167 12.8305 17.2345 15.2742 17.2345C17.718 17.2345 19.699 19.2167 19.699 21.6619V27.5652M10.8495 27.5652H19.699"
+            stroke="#412F2F" stroke-width="3.64913" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg href="wallet.html" class="wallet" xmlns="http://www.w3.org/2000/svg" width="31" height="29" viewBox="0 0 31 29" fill="none">
+          <path
+            d="M25.7571 26.3478H4.96963C3.32955 26.3478 2 25.0183 2 23.3782V10.0148C2 8.37472 3.32955 7.04517 4.96963 7.04517H25.7571C27.3972 7.04517 28.7267 8.37472 28.7267 10.0148V23.3782C28.7267 25.0183 27.3972 26.3478 25.7571 26.3478Z"
+            stroke="#D9D9D9" stroke-width="3.64913" />
+          <path
+            d="M22.045 17.4389C21.6351 17.4389 21.3026 17.1065 21.3026 16.6965C21.3026 16.2866 21.6351 15.9541 22.045 15.9541C22.455 15.9541 22.7874 16.2866 22.7874 16.6965C22.7874 17.1065 22.455 17.4389 22.045 17.4389Z"
+            fill="black" stroke="#D9D9D9" stroke-width="3.64913" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M24.2723 7.04522V4.97125C24.2723 3.02012 22.4228 1.59916 20.5375 2.10189L4.20446 6.45736C2.90451 6.80402 2 7.98134 2 9.32673V10.0149"
+            stroke="#D9D9D9" stroke-width="3.64913" />
+        </svg>
+        <svg href="note.html" class="note" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path
+            d="M16.3166 6.09045L20.407 2L27.5652 9.15828L23.4748 13.2487M16.3166 6.09045L2.42357 19.9834C2.15237 20.2546 2 20.6225 2 21.006V27.5652H8.55924C8.9428 27.5652 9.31063 27.4129 9.58185 27.1416L23.4748 13.2487M16.3166 6.09045L23.4748 13.2487"
+            stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg href="profile.html" class="profile" xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+          <path
+            d="M2 27.2175V25.6414C2 19.5482 6.93947 14.6088 13.0326 14.6088C19.1258 14.6088 24.0652 19.5482 24.0652 25.6414V27.2175"
+            stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M13.0326 14.6087C16.5143 14.6087 19.3369 11.7861 19.3369 8.30435C19.3369 4.82255 16.5143 2 13.0326 2C9.55076 2 6.72821 4.82255 6.72821 8.30435C6.72821 11.7861 9.55076 14.6087 13.0326 14.6087Z"
+            stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+    </div>
+  </footer>
+  <svg class="button-add" xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86" fill="none">
+    <circle cx="43" cy="43" r="39" fill="#D9D9D9" stroke="#AEA6A6" stroke-width="8" />
+    <path d="M43 24V62" stroke="#886C6C" stroke-width="11" stroke-linecap="round" />
+    <path d="M24 43H62" stroke="#886C6C" stroke-width="11" stroke-linecap="round" />
+  </svg>
+</body>
+
+</html>
